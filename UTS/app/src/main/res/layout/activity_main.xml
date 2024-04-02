@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Activity.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DHE-THRIFT"
+        android:gravity="center"
+        android:padding="25dp"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:padding="25dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:onClick="blazerAksi">
+
+            <ImageView
+                android:id="@+id/blazer"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:src="@drawable/blazer" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BLAZER"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:onClick="dressAksi">
+
+            <ImageView
+                android:id="@+id/dress"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:src="@drawable/dress" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DRESS"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:padding="25dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:onClick="skirtAksi">
+
+            <ImageView
+                android:id="@+id/skirt"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:src="@drawable/skirt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SKIRT"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:onClick="trouserAksi">
+
+            <ImageView
+                android:id="@+id/trouser"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:src="@drawable/trouser" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TROUSER"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Designed by Desi Shofiana Sari"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_buka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:src="@drawable/ic_baseline_open_in_new_24"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="fab_buka"/>
+
+</LinearLayout>
